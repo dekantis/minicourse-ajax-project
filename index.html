@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Your Moving Companion</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Bootswatch Styling for Improving the Aesthetics -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+
+  <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h2 id="greeting" class="greeting">Where do you want to live?</h2>
+
+    <div class="first-item col-md-6 col-lg-6">
+      <div id="google-map">
+        <label>Адрес для поиска: </label><input id="address" style="width:600px;" type="text" />
+        <div id="map_canvas" style=""></div><br/>
+        <label>Широта (latitude): </label><input id="latitude" type="text" /><br/>
+        <label>Длогота (longitude): </label><input id="longitude" type="text" />
+      </div>
+
+    </div>
+    <div class="wiki col-md-6 col-lg-6 panel panel-primary">
+      <div class="panel-heading">
+        <h1 class="panel-title"><i class="fa fa-table"></i><strong>    Wikipedia Search</strong></h1>
+      </div>
+      <div class="panel-body" id="results"></div>
+
+    </div>
+    <div class="">
+
+
+
+      <!-- Row for Searching New York Times -->
+      <div class="row">
+        <div class="col-sm-12">
+          <br>
+        </div>
+      </div>
+
+      <!-- This row will handle all of the retrieved articles -->
+      <div class="row">
+        <div class="col-sm-12">
+          <br>
+
+          <!-- This panel will initially be made up of a panel and wells for each of the articles retrieved -->
+          <div class="panel panel-primary">
+
+            <!-- Panel Heading for the retrieved articles box -->
+            <div class="panel-heading">
+              <h3 class="panel-title"><strong><i class="fa fa-table"></i>   NewYorkTimes links</strong></h3>
+            </div>
+
+            <!-- This main panel will hold each of the resulting articles -->
+            <div class="panel-body" id="wellSection">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Region -->
+      <div class="row">
+        <div class="col-sm-12">
+
+          <!-- Line Break followed by closing -->
+          <hr>
+          <h5 class="text-center"><small>Made by Ahmed with lots and lots of <i class="fa fa-heart"></i></small></h5>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
